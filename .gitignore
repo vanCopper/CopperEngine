@@ -1,3 +1,11 @@
+# Directories (CopperEngine)
+.vs/
+bin/
+bin-int/
+
+# Files (CopperEngine)
+*.user
+
 # Prerequisites
 *.d
 
