@@ -4,6 +4,7 @@
 
 //For use by CopperEngine Apps
 #include "Copper/Application.h"
+#include "Copper/Log.h"
 
 //------EntryPoint-------------------
 #include "Copper/EntryPoint.h"
