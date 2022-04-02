@@ -9,3 +9,5 @@
 #else
     #error CopperEngine only supports Windows!
 #endif // COPPER_PLATFORM_WINDOWS
+
+#define BIT(x)  (1 << x)
