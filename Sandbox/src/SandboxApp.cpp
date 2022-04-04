@@ -1,4 +1,5 @@
-#include <CopperEngine.h>
+#include "CopperEngine.h"
+#include "Copper/Core/EntryPoint.h"
 
 class Sandbox : public CopperEngine::Application
 {
