@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Copper/Core.h"
+#include "Copper/Core/Core.h"
 
 #include <string>
 #include <sstream>
@@ -25,10 +25,10 @@ namespace CopperEngine
 
 		KeyPressed,
 		KeyReleased,
+		KeyTyped,
 
 		MouseButtonPressed,
 		MouseButtonReleased,
-
 		MouseMoved,
 		MouseScrolled
 	};

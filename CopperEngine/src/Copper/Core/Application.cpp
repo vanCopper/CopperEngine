@@ -1,7 +1,7 @@
 #include "Application.h"
 
 #include "Copper/Events/ApplicationEvent.h"
-#include "Copper/Log.h"
+#include "Copper/Core/Log.h"
 
 namespace CopperEngine
 {
