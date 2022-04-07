@@ -19,6 +19,9 @@ project "CopperEngine"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "CopperPCH.h"
+    pchsource "Copper/src/CopperPCH.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

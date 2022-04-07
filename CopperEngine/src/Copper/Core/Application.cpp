@@ -1,3 +1,4 @@
+#include "CopperPCH.h"
 #include "Application.h"
 
 #include "Copper/Events/ApplicationEvent.h"

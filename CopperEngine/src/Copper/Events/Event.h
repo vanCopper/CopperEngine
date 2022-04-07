@@ -1,10 +1,7 @@
 #pragma once
 
+#include "CopperPCH.h"
 #include "Copper/Core/Core.h"
-
-#include <string>
-#include <sstream>
-#include <functional>
 
 
 namespace CopperEngine
