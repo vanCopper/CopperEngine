@@ -11,6 +11,12 @@ workspace "CopperEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["glfw"] = "CopperEngine/vendor/glfw/include"
+
+-- Include glfw premake config
+include "CopperEngine/vendor/glfw"
+
 project "CopperEngine"
     location "CopperEngine"
     kind "SharedLib"
@@ -31,7 +37,14 @@ project "CopperEngine"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.glfw}"
+    }
+
+    links
+    {
+        "glfw",
+        "opengl32.lib"
     }
 
     filter "system:windows"
