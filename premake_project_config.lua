@@ -26,7 +26,7 @@ project "CopperEngine"
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
     pchheader "CopperPCH.h"
-    pchsource "Copper/src/CopperPCH.cpp"
+    pchsource "CopperEngine/src/CopperPCH.cpp"
 
     files
     {
@@ -65,14 +65,17 @@ project "CopperEngine"
 
     filter "configurations:Debug"
         defines "COPPER_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "COPPER_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "COPPER_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Sandbox"
@@ -112,12 +115,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "COPPER_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "COPPER_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "COPPER_DIST"
+        buildoptions "/MD"
         optimize "On"
