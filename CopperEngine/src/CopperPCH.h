@@ -13,6 +13,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Copper/Core/Log.h"
+
 #ifndef COPPER_PLATFORM_WINDOWS
     #include <Windows.h>
 #endif // !COPPER_PLATFORM_WINDOWS
