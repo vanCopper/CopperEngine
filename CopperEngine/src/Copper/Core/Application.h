@@ -2,6 +2,8 @@
 
 #include "Core.h"
 #include "Window.h"
+#include "Copper/Events/Event.h"
+#include "Copper/Events/ApplicationEvent.h"
 
 namespace CopperEngine
 {
@@ -11,9 +13,13 @@ namespace CopperEngine
         Application();
         virtual ~Application();
         void Run();
+        void OnEvent(Event& event);
+
     private:
         std::unique_ptr<Window> m_Window;
         bool m_Running = true;
+
+        bool OnWindowClose(WindowCloseEvent& event);
     };
 
     //To be defined in CLINET.

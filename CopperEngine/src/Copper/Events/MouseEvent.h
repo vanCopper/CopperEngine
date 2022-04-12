@@ -28,10 +28,10 @@ namespace CopperEngine
         float m_MouseX, m_MouseY;
     };
 
-    class MouseSrolledEvent : public Event
+    class MouseScrolledEvent : public Event
     {
     public:
-        MouseSrolledEvent(const float xOffset, const float yOffset)
+        MouseScrolledEvent(const float xOffset, const float yOffset)
             :m_MouseXOffset(xOffset), m_MouseYOffset(yOffset)
         {}
 
