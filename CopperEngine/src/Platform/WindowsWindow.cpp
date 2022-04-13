@@ -4,6 +4,7 @@
 #include "Copper/Events/Event.h"
 #include "Copper/Events/KeyEvent.h"
 #include "Copper/Events/MouseEvent.h"
+#include "Copper/Core/Log.h"
 
 namespace CopperEngine
 {

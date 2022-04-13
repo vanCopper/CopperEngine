@@ -5,6 +5,7 @@
 #include <utility>
 #include <algorithm>
 #include <functional>
+#include <stdio.h>
 
 #include <string>
 #include <sstream>
@@ -13,7 +14,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include "Copper/Core/Log.h"
+
 
 #ifndef COPPER_PLATFORM_WINDOWS
     #include <Windows.h>
