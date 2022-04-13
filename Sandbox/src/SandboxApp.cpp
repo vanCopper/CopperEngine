@@ -1,9 +1,33 @@
 #include "CopperEngine.h"
 #include "Copper/Core/EntryPoint.h"
 
+class ExampleLayer : public CopperEngine::Layer
+{
+public:
+	ExampleLayer()
+		: Layer("Example")
+	{
+	}
+
+	void OnUpdate() override
+	{
+		COPPER_LOG_INFO("ExampleLayer::Update");
+	}
+
+	void OnEvent(CopperEngine::Event& event) override
+	{
+		COPPER_LOG_TRACE("{0}", event);
+	}
+};
+
+
 class Sandbox : public CopperEngine::Application
 {
-
+public:
+	Sandbox()
+	{
+		PushLayer(new ExampleLayer());
+	}
 };
 
 CopperEngine::Application* CopperEngine::CreateApplication()
@@ -13,3 +37,4 @@ CopperEngine::Application* CopperEngine::CreateApplication()
 
     return new Sandbox();
 }
+
