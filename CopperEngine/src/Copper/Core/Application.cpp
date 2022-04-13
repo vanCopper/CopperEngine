@@ -4,7 +4,7 @@
 #include "Copper/Events/ApplicationEvent.h"
 #include "Copper/Core/Log.h"
 
-#include <GLFW/glfw3.h>
+#include <glad/glad.h>
 
 namespace CopperEngine
 {

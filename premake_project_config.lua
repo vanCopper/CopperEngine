@@ -13,9 +13,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["glfw"] = "CopperEngine/vendor/glfw/include"
+IncludeDir["glad"] = "CopperEngine/vendor/glad/include"
 
 -- Include glfw premake config
 include "CopperEngine/vendor/glfw"
+include "CopperEngine/vendor/glad"
 
 project "CopperEngine"
     location "CopperEngine"
@@ -38,12 +40,14 @@ project "CopperEngine"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.glfw}"
+        "%{IncludeDir.glfw}",
+        "%{IncludeDir.glad}"
     }
 
     links
     {
         "glfw",
+        "glad",
         "opengl32.lib"
     }
 
@@ -55,7 +59,8 @@ project "CopperEngine"
         defines
         {
             "COPPER_PLATFORM_WINDOWS",
-            "COPPER_BUILD_DLL"
+            "COPPER_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands
