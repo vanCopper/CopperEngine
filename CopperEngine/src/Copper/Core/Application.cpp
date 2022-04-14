@@ -24,7 +24,7 @@ namespace CopperEngine
     {
 		while (m_Running)
 		{
-			glClearColor(0.17, 0.17, 0.18, 1);
+			glClearColor(0.17f, 0.17f, 0.18f, 1);
 			glClear(GL_COLOR_BUFFER_BIT);
 
 			for (Layer* layer : m_LayerStack)
