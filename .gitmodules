@@ -4,3 +4,6 @@
 [submodule "CopperEngine/vendor/glfw"]
 	path = CopperEngine/vendor/glfw
 	url = https://github.com/vanCopper/glfw
+[submodule "CopperEngine/vendor/imgui"]
+	path = CopperEngine/vendor/imgui
+	url = git@github.com:vanCopper/imgui.git
