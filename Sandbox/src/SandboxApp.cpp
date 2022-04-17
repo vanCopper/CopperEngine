@@ -1,7 +1,10 @@
 #include "CopperEngine.h"
 #include "Copper/Core/EntryPoint.h"
 
-class ExampleLayer : public CopperEngine::Layer
+using Layer = CopperEngine::Layer;
+using ImGuiLayer = CopperEngine::ImGuiLayer;
+
+class ExampleLayer : public Layer
 {
 public:
 	ExampleLayer()
@@ -27,6 +30,7 @@ public:
 	Sandbox()
 	{
 		PushLayer(new ExampleLayer());
+		PushOverlay(new ImGuiLayer());
 	}
 };
 
