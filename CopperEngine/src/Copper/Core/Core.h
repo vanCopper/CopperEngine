@@ -10,12 +10,17 @@
     #error CopperEngine only supports Windows!
 #endif // COPPER_PLATFORM_WINDOWS
 
+#ifdef COPPER_DEBUG
+    #define COPPER_ENABLE_ASSERTS 
+#endif // COPPER_DEBUG
+
+
 #ifdef COPPER_ENABLE_ASSERTS
-    #define COPPER_ASSERT(x, ...) { if(!(x)) { COPPER_LOG_ERROR("Assertion Failed: {0}", __VA__ARGS__); __debugbreak();} }
-    #define COPPER_CORE_ASSERT(x, ...) { if(!(x)) { COPPER_LOG_CORE_ERROR("Assertion Failed: {0}", __VA__ARGS__); __debugbreak(); } }
+    #define COPPER_ASSERT(x, ...) { if(!(x)) { COPPER_LOG_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak();} }
+    #define COPPER_CORE_ASSERT(x, ...) { if(!(x)) { COPPER_LOG_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 #else
-    #define COPPER_ASSERT(x, ...)
-    #define COPPER_CORE_ASSERT(x, ...)
+    #define COPPER_CORE_ASSERT(...)
+    #define COPPER_ASSERT(...)
 #endif
 
 #define BIT(x)  (1 << x)
