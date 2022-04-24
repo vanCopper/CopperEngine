@@ -16,10 +16,13 @@ IncludeDir["glfw"] = "CopperEngine/vendor/glfw/include"
 IncludeDir["glad"] = "CopperEngine/vendor/glad/include"
 IncludeDir["ImGui"] = "CopperEngine/vendor/imgui"
 
--- Include glfw premake config
-include "CopperEngine/vendor/glfw"
-include "CopperEngine/vendor/glad"
-include "CopperEngine/vendor/imgui"
+group "Dependencies"
+    include "CopperEngine/vendor/glfw"
+    include "CopperEngine/vendor/glad"
+    include "CopperEngine/vendor/imgui"
+
+
+group ""
 
 project "CopperEngine"
     location "CopperEngine"
