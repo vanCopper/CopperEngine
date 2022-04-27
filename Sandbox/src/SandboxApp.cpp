@@ -14,12 +14,24 @@ public:
 
 	void OnUpdate() override
 	{
-		COPPER_LOG_INFO("ExampleLayer::Update");
+		if (CopperEngine::Input::IsKeyPressed(CopperEngine::Key::Tab))
+		{
+			COPPER_LOG_TRACE("Tab key is pressed (poll).");
+		}
 	}
 
 	void OnEvent(CopperEngine::Event& event) override
 	{
-		COPPER_LOG_TRACE("{0}", event);
+		if (event.GetEventType() == CopperEngine::EventType::KeyPressed)
+		{
+			CopperEngine::KeyPressedEvent& targetEvent = (CopperEngine::KeyPressedEvent&)event;
+
+			if (targetEvent.GetKeyCode() == CopperEngine::Key::Tab)
+			{
+				COPPER_LOG_TRACE("Tab key is pressed (event).");
+				COPPER_LOG_TRACE("{0}", (char)targetEvent.GetKeyCode());
+			}
+		}
 	}
 };
 
