@@ -15,6 +15,7 @@ IncludeDir = {}
 IncludeDir["glfw"] = "CopperEngine/vendor/glfw/include"
 IncludeDir["glad"] = "CopperEngine/vendor/glad/include"
 IncludeDir["ImGui"] = "CopperEngine/vendor/imgui"
+IncludeDir["glm"] = "CopperEngine/vendor/glm"
 
 group "Dependencies"
     include "CopperEngine/vendor/glfw"
@@ -39,7 +40,9 @@ project "CopperEngine"
     files
     {
         "%{prj.name}/src/**.h",
-        "%{prj.name}/src/**.cpp"
+        "%{prj.name}/src/**.cpp",
+        "%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
     }
 
     includedirs
@@ -48,7 +51,8 @@ project "CopperEngine"
         "%{prj.name}/vendor/spdlog/include",
         "%{IncludeDir.glfw}",
         "%{IncludeDir.glad}",
-        "%{IncludeDir.ImGui}"
+        "%{IncludeDir.ImGui}",
+        "%{IncludeDir.glm}"
     }
 
     links
@@ -108,7 +112,8 @@ project "Sandbox"
     includedirs
     {
         "CopperEngine/vendor/spdlog/include",
-        "CopperEngine/src"
+        "CopperEngine/src",
+        "%{IncludeDir.glm}"
     }
 
     links

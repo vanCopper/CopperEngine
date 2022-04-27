@@ -7,3 +7,6 @@
 [submodule "CopperEngine/vendor/imgui"]
 	path = CopperEngine/vendor/imgui
 	url = git@github.com:vanCopper/imgui.git
+[submodule "CopperEngine/vendor/glm"]
+	path = CopperEngine/vendor/glm
+	url = https://github.com/g-truc/glm.git
