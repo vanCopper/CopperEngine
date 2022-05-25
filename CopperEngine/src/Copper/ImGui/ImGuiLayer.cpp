@@ -9,7 +9,7 @@
 
 #include "Copper/Core/Application.h"
 
-namespace CopperEngine
+namespace Copper
 {
 
 	ImGuiLayer::ImGuiLayer()

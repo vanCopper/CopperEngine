@@ -8,7 +8,7 @@
 
 #include <glad/glad.h>
 
-namespace CopperEngine
+namespace Copper
 {
 	static bool s_GLFWInitialized = false;
 

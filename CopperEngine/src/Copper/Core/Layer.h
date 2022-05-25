@@ -3,7 +3,7 @@
 #include "Copper/Core/Core.h"
 #include "Copper/Events/Event.h"
 
-namespace CopperEngine
+namespace Copper
 {
 	class COPPER_API Layer
 	{

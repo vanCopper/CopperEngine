@@ -1,7 +1,7 @@
 #include "CopperPCH.h"
 #include "LayerStack.h"
 
-namespace CopperEngine
+namespace Copper
 {
 
 	LayerStack::LayerStack()

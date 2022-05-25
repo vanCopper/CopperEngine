@@ -3,7 +3,7 @@
 #include "Copper/Core/Core.h"
 #include <utility>
 
-namespace CopperEngine
+namespace Copper
 {
 	class COPPER_API Input
 	{

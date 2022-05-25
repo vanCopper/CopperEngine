@@ -4,7 +4,7 @@
 #include "Copper/Core/KeyCodes.h"
 //#include <sstream>
 
-namespace CopperEngine
+namespace Copper
 {
     class KeyEvent : public Event
     {

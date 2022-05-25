@@ -6,7 +6,7 @@
 
 #include <vector>
 
-namespace CopperEngine
+namespace Copper
 {
 	class COPPER_API LayerStack
 	{

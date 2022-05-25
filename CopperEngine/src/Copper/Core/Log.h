@@ -5,7 +5,7 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 
-namespace CopperEngine
+namespace Copper
 {
     class COPPER_API Log
     {
@@ -22,15 +22,15 @@ namespace CopperEngine
 }
 
 //core log for engine.
-#define COPPER_LOG_CORE_TRACE(...)          ::CopperEngine::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define COPPER_LOG_CORE_INFO(...)           ::CopperEngine::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define COPPER_LOG_CORE_WARN(...)           ::CopperEngine::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define COPPER_LOG_CORE_ERROR(...)          ::CopperEngine::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define COPPER_LOG_CORE_FATAL(...)          ::CopperEngine::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define COPPER_LOG_CORE_TRACE(...)          ::Copper::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define COPPER_LOG_CORE_INFO(...)           ::Copper::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define COPPER_LOG_CORE_WARN(...)           ::Copper::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define COPPER_LOG_CORE_ERROR(...)          ::Copper::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define COPPER_LOG_CORE_FATAL(...)          ::Copper::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 //log for clients.
-#define COPPER_LOG_INFO(...)           ::CopperEngine::Log::GetClientLogger()->info(__VA_ARGS__)
-#define COPPER_LOG_TRACE(...)          ::CopperEngine::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define COPPER_LOG_WARN(...)           ::CopperEngine::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define COPPER_LOG_ERROR(...)          ::CopperEngine::Log::GetClientLogger()->error(__VA_ARGS__)
-#define COPPER_LOG_FATAL(...)          ::CopperEngine::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define COPPER_LOG_INFO(...)           ::Copper::Log::GetClientLogger()->info(__VA_ARGS__)
+#define COPPER_LOG_TRACE(...)          ::Copper::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define COPPER_LOG_WARN(...)           ::Copper::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define COPPER_LOG_ERROR(...)          ::Copper::Log::GetClientLogger()->error(__VA_ARGS__)
+#define COPPER_LOG_FATAL(...)          ::Copper::Log::GetClientLogger()->fatal(__VA_ARGS__)

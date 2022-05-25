@@ -6,7 +6,7 @@
 #include "Copper/Events/KeyEvent.h"
 #include "Copper/Events/MouseEvent.h"
 
-namespace CopperEngine
+namespace Copper
 {
 	class COPPER_API ImGuiLayer : public Layer
 	{

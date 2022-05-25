@@ -6,7 +6,7 @@
 #include "Copper/Events/ApplicationEvent.h"
 #include "Copper/Core/LayerStack.h"
 
-namespace CopperEngine
+namespace Copper
 {
     class COPPER_API Application
     {

@@ -1,8 +1,8 @@
 #include "CopperEngine.h"
 #include "Copper/Core/EntryPoint.h"
 
-using Layer = CopperEngine::Layer;
-using ImGuiLayer = CopperEngine::ImGuiLayer;
+using Layer = Copper::Layer;
+using ImGuiLayer = Copper::ImGuiLayer;
 
 class ExampleLayer : public Layer
 {
@@ -14,19 +14,19 @@ public:
 
 	void OnUpdate() override
 	{
-		if (CopperEngine::Input::IsKeyPressed(CopperEngine::Key::Tab))
+		if (Copper::Input::IsKeyPressed(Copper::Key::Tab))
 		{
 			COPPER_LOG_TRACE("Tab key is pressed (poll).");
 		}
 	}
 
-	void OnEvent(CopperEngine::Event& event) override
+	void OnEvent(Copper::Event& event) override
 	{
-		if (event.GetEventType() == CopperEngine::EventType::KeyPressed)
+		if (event.GetEventType() == Copper::EventType::KeyPressed)
 		{
-			CopperEngine::KeyPressedEvent& targetEvent = (CopperEngine::KeyPressedEvent&)event;
+			Copper::KeyPressedEvent& targetEvent = (Copper::KeyPressedEvent&)event;
 
-			if (targetEvent.GetKeyCode() == CopperEngine::Key::Tab)
+			if (targetEvent.GetKeyCode() == Copper::Key::Tab)
 			{
 				COPPER_LOG_TRACE("Tab key is pressed (event).");
 				COPPER_LOG_TRACE("{0}", (char)targetEvent.GetKeyCode());
@@ -36,7 +36,7 @@ public:
 };
 
 
-class Sandbox : public CopperEngine::Application
+class Sandbox : public Copper::Application
 {
 public:
 	Sandbox()
@@ -46,7 +46,7 @@ public:
 	}
 };
 
-CopperEngine::Application* CopperEngine::CreateApplication()
+Copper::Application* Copper::CreateApplication()
 {
     COPPER_LOG_CORE_TRACE("Copper Engine Core Log.");
     COPPER_LOG_WARN("Client Log.");

@@ -4,7 +4,7 @@
 #include "Copper/Core/Window.h"
 #include <GLFW/glfw3.h>
 
-namespace CopperEngine
+namespace Copper
 {
 	class WindowsWindow : public Window
 	{

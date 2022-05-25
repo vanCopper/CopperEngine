@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 
-namespace CopperEngine
+namespace Copper
 {
     using KeyCode = uint16_t;
 

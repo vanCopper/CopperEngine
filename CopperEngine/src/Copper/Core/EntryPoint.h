@@ -2,14 +2,14 @@
 
 #ifdef COPPER_PLATFORM_WINDOWS
 
-    extern CopperEngine::Application* CopperEngine::CreateApplication();
+    extern Copper::Application* Copper::CreateApplication();
 
     int main(int argc, char** argv)
     {
         //Init Logger
-        CopperEngine::Log::Init();
+        Copper::Log::Init();
 
-        auto app = CopperEngine::CreateApplication();
+        auto app = Copper::CreateApplication();
         app->Run();
         delete app;
     }

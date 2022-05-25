@@ -2,7 +2,7 @@
 #include "Log.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-namespace CopperEngine
+namespace Copper
 {
     std::shared_ptr<spdlog::logger> Log::CoreLogger;
     std::shared_ptr<spdlog::logger> Log::ClientLogger;

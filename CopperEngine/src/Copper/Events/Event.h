@@ -4,7 +4,7 @@
 #include "Copper/Core/Core.h"
 
 
-namespace CopperEngine
+namespace Copper
 {
 
 	enum class EventType

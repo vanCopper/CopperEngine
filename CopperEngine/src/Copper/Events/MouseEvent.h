@@ -3,7 +3,7 @@
 #include "Copper/Events/Event.h"
 #include "Copper/Core/MouseCodes.h"
 
-namespace CopperEngine
+namespace Copper
 {
     class MouseMovedEvent : public Event
     {

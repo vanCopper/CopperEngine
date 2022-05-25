@@ -2,7 +2,7 @@
 
 #include "Copper/Events/Event.h"
 
-namespace CopperEngine
+namespace Copper
 {
     class WindowResizeEvent : public Event
     {

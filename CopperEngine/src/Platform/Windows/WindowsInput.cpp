@@ -6,11 +6,11 @@
 
 
 
-namespace CopperEngine
+namespace Copper
 {
 	Input* Input::s_Instance = new WindowsInput();
 
-	bool CopperEngine::WindowsInput::IsKeyPressedImpl(int keycode)
+	bool Copper::WindowsInput::IsKeyPressedImpl(int keycode)
 	{
 		auto window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
 		
@@ -18,7 +18,7 @@ namespace CopperEngine
 		return state == GLFW_PRESS || state == GLFW_REPEAT;
 	}
 
-	bool CopperEngine::WindowsInput::IsMouseButtonPressedImpl(int button)
+	bool Copper::WindowsInput::IsMouseButtonPressedImpl(int button)
 	{
 		auto window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
 
@@ -26,7 +26,7 @@ namespace CopperEngine
 		return state == GLFW_PRESS;
 	}
 
-	std::pair<float, float> CopperEngine::WindowsInput::GetMousePositionImpl()
+	std::pair<float, float> Copper::WindowsInput::GetMousePositionImpl()
 	{
 		auto window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
 		double xpos, ypos;
@@ -35,13 +35,13 @@ namespace CopperEngine
 		return { (float)xpos, (float)ypos };
 	}
 
-	float CopperEngine::WindowsInput::GetMouseXImpl()
+	float Copper::WindowsInput::GetMouseXImpl()
 	{
 		auto [x, y] = GetMousePositionImpl();
 		return x;
 	}
 
-	float CopperEngine::WindowsInput::GetMouseYImpl()
+	float Copper::WindowsInput::GetMouseYImpl()
 	{
 		auto [x, y] = GetMousePositionImpl();
 		return y;

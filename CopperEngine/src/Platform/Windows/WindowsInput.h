@@ -2,7 +2,7 @@
 
 #include "Copper/Core/Input.h"
 
-namespace CopperEngine
+namespace Copper
 {
 	class WindowsInput : public Input
 	{
