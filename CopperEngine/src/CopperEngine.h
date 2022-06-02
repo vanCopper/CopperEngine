@@ -14,5 +14,5 @@
 #include "Editor/ImGui/ImGuiLayer.h"
 
 //------EntryPoint-------------------
-#include "Runtime/Core/EntryPoint.h"
+#include "Editor/EntryPoint.h"
 //-----------------------------------

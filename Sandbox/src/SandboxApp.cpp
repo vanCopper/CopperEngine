@@ -1,5 +1,5 @@
 #include "CopperEngine.h"
-#include "Runtime/Core/EntryPoint.h"
+#include "Editor/EntryPoint.h"
 
 using Layer = Copper::Layer;
 using ImGuiLayer = Copper::ImGuiLayer;

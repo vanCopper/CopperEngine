@@ -1,5 +1,8 @@
 #pragma once
 
+#include "Runtime/Core/Application.h"
+#include "Runtime/Core/Log.h"
+
 #ifdef COPPER_PLATFORM_WINDOWS
 
     extern Copper::Application* Copper::CreateApplication();
