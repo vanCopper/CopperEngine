@@ -2,9 +2,9 @@
 
 #include "Core.h"
 #include "Window.h"
-#include "Copper/Events/Event.h"
-#include "Copper/Events/ApplicationEvent.h"
-#include "Copper/Core/LayerStack.h"
+#include "Runtime/Events/Event.h"
+#include "Runtime/Events/ApplicationEvent.h"
+#include "Runtime/Core/LayerStack.h"
 
 namespace Copper
 {

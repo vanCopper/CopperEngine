@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Copper/Core/Core.h"
-#include "Copper/Events/Event.h"
+#include "Runtime/Core/Core.h"
+#include "Runtime/Events/Event.h"
 
 namespace Copper
 {

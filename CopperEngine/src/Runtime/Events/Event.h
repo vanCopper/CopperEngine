@@ -1,7 +1,7 @@
 #pragma once
 
 #include "CopperPCH.h"
-#include "Copper/Core/Core.h"
+#include "Runtime/Core/Core.h"
 
 
 namespace Copper

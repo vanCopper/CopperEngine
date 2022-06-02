@@ -1,13 +1,13 @@
 #include "CopperPCH.h"
-#include "Copper/ImGui/ImGuiLayer.h"
+#include "Editor/ImGui/ImGuiLayer.h"
 
 #include "imgui.h"
-#include "Platform/OpenGL/ImGuiOpenGLRenderer.h"
+#include "Runtime/Platform/OpenGL/ImGuiOpenGLRenderer.h"
 
 #include "GLFW/glfw3.h"
 #include "glad/glad.h"
 
-#include "Copper/Core/Application.h"
+#include "Runtime/Core/Application.h"
 
 namespace Copper
 {

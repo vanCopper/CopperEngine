@@ -1,10 +1,10 @@
 #include "CopperPCH.h"
 #include "WindowsWindow.h"
-#include "Copper/Events/ApplicationEvent.h"
-#include "Copper/Events/Event.h"
-#include "Copper/Events/KeyEvent.h"
-#include "Copper/Events/MouseEvent.h"
-#include "Copper/Core/Log.h"
+#include "Runtime/Events/ApplicationEvent.h"
+#include "Runtime/Events/Event.h"
+#include "Runtime/Events/KeyEvent.h"
+#include "Runtime/Events/MouseEvent.h"
+#include "Runtime/Core/Log.h"
 
 #include <glad/glad.h>
 

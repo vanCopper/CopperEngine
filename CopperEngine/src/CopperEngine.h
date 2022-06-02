@@ -3,16 +3,16 @@
 
 
 //For use by CopperEngine Apps
-#include "Copper/Core/Application.h"
-#include "Copper/Core/Layer.h"
-#include "Copper/Core/Log.h"
+#include "Runtime/Core/Application.h"
+#include "Runtime/Core/Layer.h"
+#include "Runtime/Core/Log.h"
 
-#include "Copper/Core/Input.h"
-#include "Copper/Core/KeyCodes.h"
-#include "Copper/Core/MouseCodes.h"
+#include "Runtime/Core/Input.h"
+#include "Runtime/Core/KeyCodes.h"
+#include "Runtime/Core/MouseCodes.h"
 
-#include "Copper/ImGui/ImGuiLayer.h"
+#include "Editor/ImGui/ImGuiLayer.h"
 
 //------EntryPoint-------------------
-#include "Copper/Core/EntryPoint.h"
+#include "Runtime/Core/EntryPoint.h"
 //-----------------------------------

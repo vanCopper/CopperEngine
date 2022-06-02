@@ -1,8 +1,8 @@
 #include "CopperPCH.h"
 #include "Application.h"
 
-#include "Copper/Events/ApplicationEvent.h"
-#include "Copper/Core/Log.h"
+#include "Runtime/Events/ApplicationEvent.h"
+#include "Runtime/Core/Log.h"
 
 #include <glad/glad.h>
 

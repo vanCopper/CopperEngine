@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Copper/Core/Layer.h"
-#include "Copper/Events/ApplicationEvent.h"
-#include "Copper/Events/Event.h"
-#include "Copper/Events/KeyEvent.h"
-#include "Copper/Events/MouseEvent.h"
+#include "Runtime/Core/Layer.h"
+#include "Runtime/Events/ApplicationEvent.h"
+#include "Runtime/Events/Event.h"
+#include "Runtime/Events/KeyEvent.h"
+#include "Runtime/Events/MouseEvent.h"
 
 namespace Copper
 {

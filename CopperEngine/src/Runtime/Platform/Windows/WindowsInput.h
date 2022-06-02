@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Copper/Core/Input.h"
+#include "Runtime/Core/Input.h"
 
 namespace Copper
 {

@@ -1,8 +1,8 @@
 #pragma once
 #pragma warning( disable: 4251 )
 
-#include "Copper/Core/Layer.h"
-#include "Copper/Core/Core.h"
+#include "Runtime/Core/Layer.h"
+#include "Runtime/Core/Core.h"
 
 #include <vector>
 
