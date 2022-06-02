@@ -41,16 +41,16 @@ class Sandbox : public Copper::Application
 public:
 	Sandbox()
 	{
-		PushLayer(new ExampleLayer());
+		/*PushLayer(new ExampleLayer());*/
 		PushOverlay(new ImGuiLayer());
 	}
 };
 
-Copper::Application* Copper::CreateApplication()
-{
-    COPPER_LOG_CORE_TRACE("Copper Engine Core Log.");
-    COPPER_LOG_WARN("Client Log.");
-
-    return new Sandbox();
-}
+//Copper::Application* Copper::CreateApplication()
+//{
+//    COPPER_LOG_CORE_TRACE("Copper Engine Core Log.");
+//    COPPER_LOG_WARN("Client Log.");
+//
+//    return new Sandbox();
+//}
 

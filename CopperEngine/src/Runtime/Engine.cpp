@@ -1,28 +1,31 @@
 #include "CopperPCH.h"
 #include "Engine.h"
 
-void Copper::CopperEngine::Initialize()
+namespace Copper
 {
+	void CopperEngine::Initialize()
+	{
 
-}
+	}
 
-void Copper::CopperEngine::StartEngine()
-{
+	void CopperEngine::StartEngine()
+	{
 
-}
+	}
 
-void Copper::CopperEngine::ShutDownEngine()
-{
+	void CopperEngine::ShutDownEngine()
+	{
 
-}
+	}
 
-void Copper::CopperEngine::GameTick()
-{
+	void CopperEngine::GameTick()
+	{
 
-}
+	}
 
-void Copper::CopperEngine::RendererTick()
-{
+	void CopperEngine::RendererTick()
+	{
 
+	}
 }
 
