@@ -1,3 +1,5 @@
+
+
 # Directories (CopperEngine)
 .vs/
 bin/
@@ -35,9 +37,12 @@ bin-int/
 *.lib
 
 # Executables
-*.exe
+# *.exe
 *.out
 *.app
 *.sln
 *.vcxproj
 *.filters
+
+# Included
+!/ThirdParty/*
