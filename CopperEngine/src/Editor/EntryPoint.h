@@ -11,6 +11,9 @@
 
     int main(int argc, char** argv)
     {
+		//Init Logger
+		Copper::Log::Init();
+
         Copper::CopperEngine* EngineRuntime = new Copper::CopperEngine();
         EngineRuntime->Initialize();
         EngineRuntime->StartEngine();
@@ -18,9 +21,6 @@
         Copper::EngineEditor* EngineEditor = new Copper::EngineEditor();
         EngineEditor->Initialize(EngineRuntime);
         EngineEditor->Start();
-        //Init Logger
-        Copper::Log::Init();
-
 
         EngineEditor->Run();
         /*auto app = Copper::CreateApplication();

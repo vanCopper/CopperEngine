@@ -19,6 +19,7 @@ namespace Copper
 		void Start();
 		void ShutDown();
 		void Run();
+		void OnEvent(Event& event);
 
 		Window& GetWindow() { return *m_Window; }
 
@@ -32,6 +33,7 @@ namespace Copper
 		std::unique_ptr<Window> m_Window;
 		LayerStack m_LayerStack;
 		bool m_Running = true;
+		std::unique_ptr<Layer> m_EditorUILayer;
 
 	private:
 		static EngineEditor* s_Instance;
