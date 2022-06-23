@@ -42,7 +42,7 @@ public:
 	Sandbox()
 	{
 		/*PushLayer(new ExampleLayer());*/
-		PushOverlay(new ImGuiLayer());
+		//PushOverlay(new ImGuiLayer());
 	}
 };
 

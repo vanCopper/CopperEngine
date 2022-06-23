@@ -24,7 +24,7 @@ namespace Copper
 
 	void EngineEditor::Initialize(CopperEngine* Engine)
 	{
-		m_EditorUILayer = std::make_unique<Layer>(new ImGuiLayer());
+		m_EditorUILayer = std::shared_ptr<ImGuiLayer>(new ImGuiLayer());
 	}
 
 	void EngineEditor::Start()
@@ -45,11 +45,11 @@ namespace Copper
 			glClearColor(0.17f, 0.17f, 0.18f, 1);
 			glClear(GL_COLOR_BUFFER_BIT);
 
-			for (Layer* layer : m_LayerStack)
+			if (m_EditorUILayer)
 			{
-				layer->OnUpdate();
+				m_EditorUILayer->OnUpdate();
 			}
-
+			
 			m_Window->OnUpdate();
 		}
 	}
@@ -59,14 +59,19 @@ namespace Copper
 		EventDispatcher dispatcher(event);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FUNC(OnWindowClose));
 
-		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
+		if (m_EditorUILayer)
 		{
-			(*--it)->OnEvent(event);
-			if (event.Handled)
-			{
-				break;
-			}
+			m_EditorUILayer->OnEvent(event);
 		}
+
+		//for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
+		//{
+		//	(*--it)->OnEvent(event);
+		//	if (event.Handled)
+		//	{
+		//		break;
+		//	}
+		//}
 	}
 
 	void EngineEditor::Tick()

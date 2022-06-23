@@ -33,7 +33,7 @@ namespace Copper
 		std::unique_ptr<Window> m_Window;
 		LayerStack m_LayerStack;
 		bool m_Running = true;
-		std::unique_ptr<Layer> m_EditorUILayer;
+		std::shared_ptr<Layer> m_EditorUILayer;
 
 	private:
 		static EngineEditor* s_Instance;
