@@ -1,5 +1,4 @@
 #!/bin/sh
-cd ../
 
 #Remove output files
 rm -rf bin/ bin-int/
